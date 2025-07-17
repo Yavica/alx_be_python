@@ -32,7 +32,6 @@ projected_annual_savings = monthly_savings * 12 * (1 + annual_interest_rate)
 # Using an f-string for clear output. We use ':.2f' to format the number to two decimal places,
 # which is common for currency.
 print(f"Your monthly savings are ${monthly_savings:.2f}.")
-
+1000
 # Display the projected annual savings after including interest.
 print(f"Projected savings after one year, with interest, is: ${projected_annual_savings:.2f}")
-
