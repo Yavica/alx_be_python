@@ -17,14 +17,14 @@ is_time_bound = (time_bound_input == 'yes')
 reminder_message = ""
 
 # 2. Process the Task Based on Priority using if-elif-else:
-# The if-elif-else statement helps to handle different priority levels cleanly.
+# Replacing match-case for compatibility with Python < 3.10.
 if priority == 'high':
     reminder_message = f"'{task}' is a high priority task"
 elif priority == 'medium':
     reminder_message = f"'{task}' is a medium priority task"
 elif priority == 'low':
     reminder_message = f"'{task}' is a low priority task"
-else: # Default case for invalid priority input
+else:  # Default case for invalid priority input
     reminder_message = f"'{task}' has an unknown priority"
     print("Warning: Invalid priority entered. Please use 'high', 'medium', or 'low'.")
 
